@@ -14,7 +14,7 @@ jobs:
 
       # https://keithweaverca.medium.com/zip-code-base-with-github-actions-for-releases-aca66f530dae
       - name: Create a release folder and copy PHP, JS and other plugin files files
-        run: mkdir ${{ github.event.repository.name }} && cp -r *.php *.js LICENSE ./${{ github.event.repository.name }}
+        run: mkdir ${{ github.event.repository.name }} && cp -r *.php LICENSE ./${{ github.event.repository.name }}
 
       - name: Zip release
         uses: thedoctor0/zip-release@master #https://github.com/TheDoctor0/zip-release
